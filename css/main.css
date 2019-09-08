@@ -393,4 +393,13 @@ ul {
   width: 1160px;
   margin: 0 auto;
 }
+
+.slider {
+  counter-reset: slider-number;
+}
+
+.slider__counter::before {
+  counter-increment: slider-number;
+  content: "0" counter(slider-number);
+}
 /*# sourceMappingURL=maps/main.css.map */
