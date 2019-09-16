@@ -142,9 +142,9 @@
                     <div class="slider__counter"></div>
                 </div>
                 <div class="slider__item">
-                    <divpicture class="slider__image">
+                    <picture class="slider__image">
                         <img src="img/slider-image-3.jpg" alt="Изображение товара">
-                    </divpicture>
+                    </picture>
                     <div class="slider__info">
                         <h2 class="slider__info-title">Порхает как бабочка, жалит как пчела!</h2>
                         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -423,22 +423,23 @@
     </footer>
     <div class="contact-popup">
         <div class="contact-popup__wrap">
-            <form action="" method="post"></form>
-            <div class="contact-popup__field">
-                <label for="contact-user-name">Ваше имя:</label>
-                <input type="text" name="contact-user-name" id="contact-user-name" placeholder="Имя Фамилия">
-            </div>
-            <div class="contact-popup__field">
-                <label for="contact-user-name">Ваш e-mail:</label>
-                <input type="email" name="contact-user-email" id="contact-user-email" placeholder="email@example.com">
-            </div>
-            <div class="contact-popup__field contact-popup__field--textarea">
-                <label for="contact-user-text">Текст письма:</label>
-                <textarea name="contact-user-text" id="contact-user-text" placeholder="В свободной форме"></textarea>
-            </div>
-            <div class="contact-popup__field">
-                <button class="device-btn" type="submit">Отправить</button>
-            </div>
+            <form action="" method="post">
+                <div class="contact-popup__field">
+                    <label for="contact-user-name">Ваше имя:</label>
+                    <input type="text" name="contact-user-name" id="contact-user-name" placeholder="Имя Фамилия">
+                </div>
+                <div class="contact-popup__field">
+                    <label for="contact-user-name">Ваш e-mail:</label>
+                    <input type="email" name="contact-user-email" id="contact-user-email" placeholder="email@example.com">
+                </div>
+                <div class="contact-popup__field contact-popup__field--textarea">
+                    <label for="contact-user-text">Текст письма:</label>
+                    <textarea name="contact-user-text" id="contact-user-text" placeholder="В свободной форме"></textarea>
+                </div>
+                <div class="contact-popup__field">
+                    <button class="device-btn" type="submit">Отправить</button>
+                </div>
+            </form>
         </div>
         <button class="contact-popup__close-btn" type="button" aria-label="Закрыть окно">Закрыть</button>
     </div>
