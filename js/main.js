@@ -104,7 +104,46 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+document.getElementsByClassName("header__secondary-menu-search-input")[0].addEventListener("focus", function () {
+  document.getElementsByClassName("header__secondary-menu-search-btn")[0].setAttribute("style", "visibility: visible");
+});
+document.getElementsByClassName("header__secondary-menu-search-input")[0].addEventListener("blur", function () {
+  document.getElementsByClassName("header__secondary-menu-search-btn")[0].removeAttribute("style", "visibility: hidden");
+});
+document.querySelector(".header__main-menu-item--dropdown").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".header__main-menu-submenu").classList.toggle("header__main-menu-submenu--active");
+}); // document.querySelector(".header__main-menu-item--dropdown").addEventListener("mouseout", function(){
+// 	document.querySelector(".header__main-menu-submenu").classList.remove("header__main-menu-submenu--active");
+// });
 
+/***/ }),
+
+/***/ "./src/blocks/modules/hp-cf-popup/hp-cf-popup.js":
+/*!*******************************************************!*\
+  !*** ./src/blocks/modules/hp-cf-popup/hp-cf-popup.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.querySelector(".contact-popup__close-btn").addEventListener("click", function () {
+  document.querySelector(".contact-popup").classList.add("hidden");
+  document.querySelector(".contact-popup-overlay").classList.add("hidden");
+});
+
+/***/ }),
+
+/***/ "./src/blocks/modules/hp-company/hp-company.js":
+/*!*****************************************************!*\
+  !*** ./src/blocks/modules/hp-company/hp-company.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.querySelector(".company__contacts-btn").addEventListener("click", function () {
+  document.querySelector(".contact-popup").classList.remove("hidden");
+  document.querySelector(".contact-popup-overlay").classList.remove("hidden");
+});
 
 /***/ }),
 
@@ -132,6 +171,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_hp_company_hp_company__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/hp-company/hp-company */ "./src/blocks/modules/hp-company/hp-company.js");
+/* harmony import */ var _modules_hp_company_hp_company__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_hp_company_hp_company__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_hp_cf_popup_hp_cf_popup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/hp-cf-popup/hp-cf-popup */ "./src/blocks/modules/hp-cf-popup/hp-cf-popup.js");
+/* harmony import */ var _modules_hp_cf_popup_hp_cf_popup__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_hp_cf_popup_hp_cf_popup__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
