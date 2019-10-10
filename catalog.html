@@ -52,33 +52,33 @@
                 <ul class="header__main-menu">
                     <li class="header__main-menu-item">
                         <a class="header__main-menu-item--dropdown" href="catalog.html">Каталог товаров</a>
-                        <ul class="header__main-menu-submenu">
-                            <li class="header__main-menu-submenu-block">
+                        <ul class="header__submenu">
+                            <li class="header__submenu-block">
                                 <ul>
-                                    <li class="header__main-menu-submenu-item">
+                                    <li class="header__submenu-item">
                                         <a href="#">Виртуальная реальность</a>
                                     </li>
-                                    <li class="header__main-menu-submenu-item">
+                                    <li class="header__submenu-item">
                                         <a href="#">Моноподы для селфи</a>
                                     </li>
-                                    <li class="header__main-menu-submenu-item">
+                                    <li class="header__submenu-item">
                                         <a href="#">Экшн-камеры</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__main-menu-submenu-block">
+                            <li class="header__submenu-block">
                                 <ul>
-                                    <li class="header__main-menu-submenu-item">
+                                    <li class="header__submenu-item">
                                         <a href="#">Фитнес-браслеты</a>
                                     </li>
-                                    <li class="header__main-menu-submenu-item">
+                                    <li class="header__submenu-item">
                                         <a href="#">Умные часы</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header__main-menu-submenu-block">
+                            <li class="header__submenu-block">
                                 <ul>
-                                    <li class="header__main-menu-submenu-item">
+                                    <li class="header__submenu-item">
                                         <a href="#">Квадрокоптеры</a>
                                     </li>
                                 </ul>
@@ -128,8 +128,17 @@
                                 <fieldset class="catalog-sidebar__filter-item">
                                     <legend class="catalog-sidebar__filter-item-title">Стоимость</legend>
                                     <div class="catalog-sidebar__filter-item-range">
-                                        <input type="text" value="0">
-                                        <input type="text" value="3000">
+                                        <div class="catalog-sidebar__filter-item-range-controls">
+                                            <div class="catalog-sidebar__filter-item-range-bar">
+                                                <div class="catalog-sidebar__filter-item-range-active"></div>
+                                            </div>
+                                            <div class="catalog-sidebar__filter-item-range-min"></div>
+                                            <div class="catalog-sidebar__filter-item-range-max"></div>
+                                        </div>
+                                        <label class="catalog-sidebar__filter-item-range-label" for="range-min-value">от</label>
+                                        <input class="catalog-sidebar__filter-item-range-value" type="text" name="min-price" id="range-min-value" value="0">
+                                        <label class="catalog-sidebar__filter-item-range-label" for="range-max-value">до</label>
+                                        <input class="catalog-sidebar__filter-item-range-value" type="text" name="max-price" id="range-max-value" value="5000">
                                     </div>
                                 </fieldset>
                                 <fieldset class="catalog-sidebar__filter-item">
@@ -378,6 +387,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
