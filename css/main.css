@@ -551,6 +551,14 @@ img {
   min-height: 186px;
 }
 
+.header.header-inner .header__secondary-menu-user-info {
+  display: block;
+}
+
+.header.header-inner .header__secondary-menu-user-login {
+  display: none;
+}
+
 .header__logo {
   position: absolute;
   top: -19px;
@@ -663,7 +671,7 @@ img {
 }
 
 .header__secondary-menu-user-info-logout {
-  margin-left: 18px;
+  margin-left: 13px;
   padding: 0;
   color: rgba(0, 0, 0, 0.3);
   border: 0;
@@ -678,6 +686,10 @@ img {
 
 .header__secondary-menu-compare span {
   margin-left: 5px;
+}
+
+.header__secondary-menu-cart {
+  margin-right: -2px;
 }
 
 .header__secondary-menu-cart span {
@@ -1510,6 +1522,11 @@ img {
   display: none;
 }
 
+.catalog-sidebar__filter-item-group input[type="checkbox"]:disabled + label,
+.catalog-sidebar__filter-item-group input[type="radio"]:disabled + label {
+  opacity: 0.4;
+}
+
 .catalog-sidebar__filter-item-group input:checked ~ label::after {
   display: block;
 }
@@ -1717,14 +1734,14 @@ img {
 
 .catalog-content__products-item {
   width: calc(50% - 20px);
-  margin-bottom: 70px;
+  margin-bottom: 48px;
 }
 
 .catalog-content__products-item:nth-child(2n + 1) {
   margin-right: auto;
 }
 
-.catalog-content__products-link:hover .catalog-content__products-overlay {
+.catalog-content__products-wrap:hover .catalog-content__products-overlay {
   transform: scale(1);
 }
 
@@ -1737,7 +1754,6 @@ img {
 .catalog-content__products-info {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -2045,9 +2061,30 @@ img {
   background-color: #464646;
 }
 
-.footer-inner {
+.footer.footer-inner {
   margin-top: 0;
   padding: 65px 140px;
+}
+
+.footer.footer-inner .footer__secondary-menu-user-info {
+  display: block;
+}
+
+.footer.footer-inner .footer__secondary-menu-user-info-logout {
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+
+.footer.footer-inner .footer__secondary-menu-user-info-logout:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer.footer-inner .footer__secondary-menu-user-info-logout:active {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer.footer-inner .footer__secondary-menu-user-login {
+  display: none;
 }
 
 .footer a {
@@ -2127,7 +2164,7 @@ img {
 }
 
 .footer__secondary-menu-user-info-logout {
-  margin-left: 18px;
+  margin-left: 13px;
   padding: 0;
   color: rgba(0, 0, 0, 0.3);
   border: 0;
