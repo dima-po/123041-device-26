@@ -415,7 +415,7 @@ template {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
@@ -427,7 +427,7 @@ template {
 @font-face {
   font-family: "Gilroy Bold";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
-  font-weight: bold;
+  font-weight: 600;
 }
 
 @font-face {
@@ -785,7 +785,7 @@ img {
   z-index: 1000;
   display: none;
   flex-direction: row;
-  width: 1200px;
+  width: 1160px;
   padding: 0;
   padding-right: 60px;
   padding-left: 60px;
@@ -1385,6 +1385,7 @@ img {
 .catalog {
   margin-top: 46px;
   background-color: #ebebeb;
+  overflow-x: hidden;
 }
 
 .catalog__wrap {
@@ -1697,6 +1698,7 @@ img {
   opacity: 0.2;
   transition: 0.2s;
   cursor: pointer;
+  outline: 0;
 }
 
 .catalog-content__sort-arrow button:last-child {
@@ -1759,7 +1761,6 @@ img {
 }
 
 .catalog-content__products-name {
-  margin: 0;
   font-family: "Gilroy Bold", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -2057,13 +2058,13 @@ img {
 
 .footer {
   margin-top: 65px;
-  padding: 75px 140px;
+  padding: 75px 0;
   background-color: #464646;
 }
 
 .footer.footer-inner {
   margin-top: 0;
-  padding: 65px 140px;
+  padding: 65px 0;
 }
 
 .footer.footer-inner .footer__secondary-menu-user-info {
