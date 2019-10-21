@@ -1758,6 +1758,24 @@ img {
   overflow: hidden;
 }
 
+.catalog-content__products-image--new::before {
+  content: "new";
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-family: "Gilroy Bold", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
 .catalog-content__products-info {
   display: flex;
   flex-direction: row;
