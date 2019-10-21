@@ -1907,18 +1907,13 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 9999;
   display: none;
   width: 100%;
-  z-index: 9999;
   max-width: 960px;
   padding: 100px;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
-}
-
-.contact-popup--fill-error {
-  animation-name: bounce;
-  animation-duration: 0.5s;
 }
 
 .contact-popup__wrap form {
@@ -1946,10 +1941,10 @@ img {
 
 .contact-popup__field input,
 .contact-popup__field textarea {
-  border: 0;
   padding: 15px;
-  font-size: 14px;
   color: #464646;
+  border: 0;
+  font-size: 14px;
   background-color: rgba(70, 70, 70, 0.09);
 }
 
@@ -2058,6 +2053,11 @@ img {
   display: block;
   transform: translate(-50%, -50%);
   animation-name: popup-dropdown;
+  animation-duration: 0.5s;
+}
+
+.popup-fill-error {
+  animation-name: popup-dropdown, bounce;
   animation-duration: 0.5s;
 }
 

@@ -150,9 +150,9 @@ if (contactPopupCloseBtn || mapPopupCloseBtn || contactForm || overlay) {
 
   contactForm.addEventListener("submit", function (e) {
     if (!contactUserName.value || !contactUserEmail.value || !contactUserText.value) {
-      contactPopup.classList.add("contact-popup--fill-error");
+      contactPopup.classList.add("popup-fill-error");
       setTimeout(function () {
-        contactPopup.classList.remove("contact-popup--fill-error");
+        contactPopup.classList.remove("popup-fill-error");
       }, 400);
       e.preventDefault();
     }
@@ -160,8 +160,8 @@ if (contactPopupCloseBtn || mapPopupCloseBtn || contactForm || overlay) {
   // Close PopUp by clicking on overlay
 
   overlay.addEventListener("click", function () {
-    if (contactPopup.className.indexOf("hidden") === -1) {
-      contactPopup.classList.add("hidden");
+    if (contactPopup.className.indexOf("popup-active") !== -1) {
+      contactPopup.classList.remove("popup-active");
     }
 
     if (mapPopup.className.indexOf("popup-active") !== -1) {
@@ -175,11 +175,11 @@ if (contactPopupCloseBtn || mapPopupCloseBtn || contactForm || overlay) {
 
 window.addEventListener("keydown", function (e) {
   if (e.keyCode === 27) {
-    if (contactPopup.className.indexOf("hidden") === -1) {
-      contactPopup.classList.add("hidden");
+    if (contactPopup.className.indexOf("popup-active") !== -1) {
+      contactPopup.classList.remove("popup-active");
     }
 
-    if (mapPopup.className.indexOf("popup-active") === -1) {
+    if (mapPopup.className.indexOf("popup-active") !== -1) {
       mapPopup.classList.remove("popup-active");
     }
 
