@@ -351,7 +351,14 @@ if (line) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+document.querySelectorAll("img").forEach(function (item) {
+  setTimeout(function () {
+    var imgHeight = item.height;
+    var imgWidth = item.width;
+    item.setAttribute("width", imgWidth);
+    item.setAttribute("height", imgHeight);
+  }, 2000);
+});
 
 /***/ }),
 
