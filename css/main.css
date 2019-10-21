@@ -2012,6 +2012,10 @@ img {
   height: 100%;
 }
 
+.map-popup iframe {
+  border: 0;
+}
+
 .popup-close-btn {
   position: absolute;
   top: 22px;
