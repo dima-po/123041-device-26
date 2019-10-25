@@ -2368,6 +2368,16 @@ img {
   opacity: 0.3;
 }
 
+@media screen and (max-width: 1200px) {
+  main {
+    width: 1200px;
+  }
+
+  .footer {
+    width: 1200px;
+  }
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body {
     overflow-x: hidden;
