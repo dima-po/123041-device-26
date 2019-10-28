@@ -205,6 +205,7 @@ if (companyBtn) {
     document.querySelector(".contact-popup").classList.add("popup-active");
     document.querySelector(".popup-overlay").classList.remove("hidden");
     contactUserFocus.focus();
+    e.preventDefault();
   });
 }
 
